@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url("./assets/ProximaNova-Regular.otf");
+}
+@-webkit-keyframes change {
+  0% {
+    background-image: url(./assets/Desert_Beauty_Christoph_Fischer.jpg);
+  }
+  20% {
+    background-image: url(./assets/If_Only_We_Could_Turn_Back_Time_Anna_Kwa.jpg);
+  }
+  40% {
+    background-image: url(./assets/benito_druck.jpg);
+  }
+  60% {
+    background-image: url(./assets/Frosch_Bokeh_2_Axel_F.jpg);
+  }
+  80% {
+    background-image: url(./assets/Cool_Power_commended-LPOTY_UK_Steve_Cole.jpg);
+  }
+  100% {
+    background-image: url(./assets/Europes_best_View_Fabian_Fortmann.jpg);
+  }
+  
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(./assets/Sheep_in_the_woods_II_James_Mills.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Proxima";
+  overflow: hidden;
+ /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+-webkit-animation-name: change;
+-webkit-animation-duration: 20s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: step-end;
+
+ 
+  
+
+}
+
+#mask {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.nav-mask {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 65px;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+  z-index: 45;
+}
+
+.navbar {
+  width: 100%;
+  height: 62px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px;
+  z-index: 51;
+}
+
+#component-2 {
+  height: 170%;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  background: #e0e1e1;
+  opacity: 0.5;
+  border: navajowhite;
+  border-radius: 3px;
+  z-index: 555;
+}
+#component-2 input {
+  z-index: 100;
+  border-radius: 3px;
+  
+  /* opacity: 0.5; */
+  width: 938px;
+  height: 32px;
+  border: none;
+  z-index: 555;
+  outline: none;
+  padding-left: 10px;
+  /* position: absolute; */
+}
+
+input::placeholder {
+  color: #191616;
+  font-weight: 500;
+  z-index: 555;
+  font-family: "Proxima";
+  font-size: 15px;
+}
+
+#component-2 img {
+  padding: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+
+#component-3 {
+  width: 14%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 35px;
+  z-index: 100;
+}
+
+#component-3 #first {
+  font-family: "Proxima";
+  font-size: 16.5px;
+
+  height: 65%;
+  width: 36%;
+  background: none;
+  color: white;
+  border: none;
+  padding: 1px 0px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#component-3 #second {
+  font-family: "Proxima";
+  font-size: 15px;
+  font-weight: bold;
+  height: 35px;
+  width: 100px;
+  background: none;
+  color: black;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 0 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+#component-3 #second:hover {
+  color: #7f7f7f;
+}
+
+.main-landing-section {
+  font-family: "Proxima";
+  position: absolute;
+  top: 65px;
+  z-index: 555;
+  height: 634px;
+  width: 100%;
+  /* background-color:rosybrown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-landing-section h1 {
+  font-size: 56px;
+  line-height: 56px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-family: "Proxima";
+  letter-spacing: 1px;
+}
+
+.main-landing-section p {
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: normal;
+  margin-top: 26px;
+  color: white;
+  font-weight: bold;
+  font-family: "Proxima";
+}
+
+.main-landing-section button {
+  font-family: "Proxima";
+  background: white;
+  border: none;
+  font-weight: bolder;
+  font-size: 24px;
+  line-height: 64px;
+  text-align: center;
+  height: 64px;
+  width: 200px;
+  padding: 0 20px;
+  margin-top: 50px;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+.main-landing-section button:hover {
+  color: #7f7f7f;
+}
+
+#content-landing {
+  margin-top: -25px;
+  /* position: absolute; */
+  /* background-color: chartreuse; */
+  /* top: 200px; */
+  width: 640px;
+  height: 297px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  /* overflow: hidden; */
+  width: 100%;
+  height: 56px;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  /* opacity:60%; */
+  position: absolute;
+  /* top:699px; */
+  bottom: 0;
+  z-index: 555;
+  padding: 0 38px;
+}
+
+.footer-buts-main {
+  background: none;
+  color: hsla(0, 0%, 100%, 0.6);
+  border: none;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-family: "Proxima";
+  font-weight: 500;
+  cursor: pointer;
+}
+.footer-buts-main:hover {
+  color: white;
+}
+.english div {
+  background-color: transparent;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAQAAABQ+cdNAAAAOUlEQVQIW2P4L/lfgwEJ/Nf4L8fwX/f/s//mcCFzIM8YxHCCCYOFnGDyYGEUIbgwqhBY2BhsFhgAAGa6JziJ9SClAAAAAElFTkSuQmCC);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  /* display: block; */
+  height: 18px;
+  width: 10px;
+}
+
+.english {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  /* flex: 0 0 auto; */
+  /* position: relative; */
+  /* flex-direction: row; */
+  /* width:60.25px; */
+}
+
+.english button {
+  background: none;
+  color: hsla(0, 0%, 100%, 0.6);
+  border: none;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-family: "Proxima";
+  font-weight: 500;
+}
+
+.english button:hover {
+  color: white;
+}
+
+.last-two-buts {
+  display: flex;
+  text-align: center;
+}
+
+.last-two-buts button {
+  border: none;
+  background: none;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 14px;
+  line-height: 16.8px;
+  font-family: "Proxima";
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.last-two-buts button:hover {
+  color: white;
+}
