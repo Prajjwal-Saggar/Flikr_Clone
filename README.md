@@ -6,5 +6,5 @@
 
 <h2>🚀 Demo</h2>
 
-[https://prajjwal-saggar.github.io/Flikr\_Clone/](https://prajjwal-saggar.github.io/Flikr_Clone/)
+[https://prajjwal-saggar.github.io/Flikr\_Clone/](https://prajjwal-saggar.github.io/Flikr_Clone_Desktop_Compatible-/)
 
